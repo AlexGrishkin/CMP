@@ -1,19 +1,68 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("./fonts/Roboto-Regular.woff2") format("woff2"),
+    url("./fonts/Roboto-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  /* border: 1px solid red; */
+}
+
 body {
-    margin: 0;
-    height: 100vh;
-    width: 100vw;
+  margin: 0;
+  background-color: #202124;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16.41px;
+  color: #ffffff;
+}
 
-    > #root {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: inherit;
-        width: inherit;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li {
+  margin: 0;
+  padding: 0;
+}
 
-        > iframe {
-            height: 100%;
-            width: 100%;
-            border: unset;
-        }
-    }
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input {
+  all: unset;
+  color: currentColor;
+  font-family: inherit;
+  font-size: inherit;
+  background-color: inherit;
+  cursor: pointer;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
 }
