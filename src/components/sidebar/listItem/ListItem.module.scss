@@ -1,0 +1,11 @@
+.list_container {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding-inline-start: 20px;
+  cursor: pointer;
+}
+
+.list_container:focus {
+  background-color: #a1a1aa;
+}
